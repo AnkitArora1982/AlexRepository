@@ -8,4 +8,6 @@ import com.synergy.domain.Automobile;
 @Repository
 public interface AutomobileRepository extends JpaRepository<Automobile, Integer>{
 
+	public Automobile findByName(String name);
+	
 }
